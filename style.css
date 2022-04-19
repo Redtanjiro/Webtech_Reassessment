@@ -1,3 +1,4 @@
+/* remove margin and padding from all elements */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,10 @@
 }
 
 .visitorprofile {
+    /* offset down to make room for offset image*/
+    margin-top: 160px;
+
+    /* properties to adjust display flex */
     display: flex;
     flex-direction: column;
     align-items: center;
