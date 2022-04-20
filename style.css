@@ -81,6 +81,11 @@
 
 /* info aligned to the bottom of the profile */
 .bottomInfo {
+    /* properties to adjust flex */
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+
     /* positioning properties */
     margin-top: auto;
     margin-bottom: 15px;
@@ -99,6 +104,9 @@
 }
 
 .infoTitle {
-    font-weight: 400;
+    /* Adjust text styles */
+    color: rgb(94, 94, 94);
+    font-size: 14px;
+    font-weight: 700;
     margin-bottom: 4px;
 }
