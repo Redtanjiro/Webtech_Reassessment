@@ -11,9 +11,21 @@
     height: 160px;
 }
 
+/* container for all visitor user info */
 .visitorInfo {
     /* properties to adjust display flex */
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* visitor user profile picture */
+#visitorPicture {
+    /* offset picture up by 50% of its height */
+    margin-top: -64px;
+    border-radius: 50%;
+
+    /* give it a border to make it aesthetically balanced */
+    outline: 8px solid white;
+    outline-offset: -2px;
 }
