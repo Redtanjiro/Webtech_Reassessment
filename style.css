@@ -5,10 +5,13 @@
     box-sizing: border-box;
 }
 
-.visitorprofile {
-    /* offset down to make room for offset image*/
-    margin-top: 160px;
+/* banner image of visitor profile */
+.bannerImage {
+    background-image: url("pictures/banner.jpg");
+    height: 160px;
+}
 
+.visitorInfo {
     /* properties to adjust display flex */
     display: flex;
     flex-direction: column;
