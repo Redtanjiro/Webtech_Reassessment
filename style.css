@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 230px;
+    height: 240px;
 
     /* Styling */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.356);
@@ -85,4 +85,17 @@
     /* adjust font properties */
     font-size: 14px;
     font-weight: 300;
+}
+
+/* containers inside bottom info which each hold a piece of information */
+.bottomInfo div {
+    /* flex properties to center all inside elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoTitle {
+    font-weight: 400;
+    margin-bottom: 4px;
 }
