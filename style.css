@@ -53,9 +53,19 @@
 
 }
 
+/* visitor greeting message */
+#visitorGreeting {
+    /* positioning adjustment */
+    margin-top: 10px;
+
+    /* adjust font properties */
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(130, 130, 130);
+}
+
 /* Visitor Name */
 #visitorName {
-    margin-top: 5px;
     font-size: 28px;
     font-weight: 700;
 }
@@ -63,7 +73,6 @@
 /* Visitor Email */
 #visitorEmail {
     font-size: 17px;
-    font-weight: 300;
     color: rgb(130, 130, 130);
 }
 
