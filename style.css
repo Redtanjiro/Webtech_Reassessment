@@ -17,6 +17,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /* Styling */
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.356);
 }
 
 /* visitor user profile picture */
@@ -28,4 +31,7 @@
     /* give it a border to make it aesthetically balanced */
     outline: 8px solid white;
     outline-offset: -2px;
+
+    /* Styling */
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.812);
 }
