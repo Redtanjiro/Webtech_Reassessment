@@ -1,3 +1,9 @@
+/* Import fonts */
+
+/* Lato 100, 300, 400, 500, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
 /* remove margin and padding from all elements */
 * {
     margin: 0;
@@ -20,6 +26,7 @@
 
     /* Styling */
     box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.356);
+    font-family: 'Lato', sans-serif;
 }
 
 /* visitor user profile picture */
