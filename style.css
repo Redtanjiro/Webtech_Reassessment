@@ -14,7 +14,8 @@
 /* banner image of visitor profile */
 .bannerImage {
     background-image: url("pictures/banner.jpg");
-    height: 160px;
+    margin-bottom: -20px;
+    height: 180px;
 }
 
 /* container for all visitor user info */
@@ -27,6 +28,8 @@
 
     /* Styling */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.356);
+    background-color: white;
+    border-radius: 20px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -80,7 +83,7 @@
 .bottomInfo {
     /* positioning properties */
     margin-top: auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     /* adjust font properties */
     font-size: 14px;
