@@ -128,8 +128,8 @@ body {
     width: 100%;
 }
 
+/* "find new people at top of results */
 .displayTitle {
-
     /* User Profile */
     position: relative;
     left: 50%;
@@ -140,4 +140,21 @@ body {
     font-weight: 400;
     font-size: 28px;
     color: rgb(67, 67, 67);
+}
+
+/* container for cards */
+.results {
+    padding: 80px 80px;
+}
+
+/* card for showing search results */
+.card {
+    /* sizing */
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+
+    /* remaining styling */
+    background-color: white;
+    outline: 2px solid rgb(202, 202, 202);
 }
