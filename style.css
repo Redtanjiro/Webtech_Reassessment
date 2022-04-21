@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -35,7 +36,6 @@ body {
     background-color: white;
     border-radius: 20px 20px 0 0;
     border-bottom: 3px solid rgb(70, 128, 255);
-    font-family: 'Lato', sans-serif;
 }
 
 /* visitor user profile picture */
@@ -121,4 +121,23 @@ body {
     height: 120%;
     width: .25px;
     background-color: rgb(207, 207, 207);
+}
+
+/* display results below*/
+.displayresults {
+    width: 100%;
+}
+
+.displayTitle {
+
+    /* User Profile */
+    position: relative;
+    left: 50%;
+    width: max-content;
+    transform: translate(-50%, 40px);
+
+    /* Styling */
+    font-weight: 400;
+    font-size: 28px;
+    color: rgb(67, 67, 67);
 }
