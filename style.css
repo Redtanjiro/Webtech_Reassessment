@@ -157,4 +157,16 @@ body {
     /* remaining styling */
     background-color: white;
     outline: 2px solid rgb(202, 202, 202);
+    padding: 20px 20px;
+}
+
+.cardImage {
+    /* controling positioning */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    /* control the styling */
+    width: 100px;
+    border-radius: 50%;
 }
