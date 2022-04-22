@@ -170,3 +170,11 @@ body {
     width: 100px;
     border-radius: 50%;
 }
+
+.infoContainer {
+    /* set height and display properties*/
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
