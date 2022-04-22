@@ -212,9 +212,26 @@ body {
 
     /* make it so that children go left to right */
     display: flex;
+    align-items: center;
 }
 
 /* text that says "number of results" */
 .options p {
     margin-right: 10px;
+}
+
+/* button to search for result */
+.searchButton {
+    /* set backgorund and text color */
+    background-color: rgb(0, 115, 255);
+    color: white;
+
+    /* set rounded corners */
+    border-radius: 10px;
+
+    /* adjust size and position by giving padding and margin*/
+    margin-left: 10px;
+    padding: 8px 10px;
+
+    cursor: pointer;
 }
