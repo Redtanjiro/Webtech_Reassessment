@@ -135,6 +135,7 @@ body {
     left: 50%;
     width: max-content;
     transform: translate(-50%, 40px);
+    margin-bottom: 50px;
 
     /* Styling */
     font-weight: 400;
@@ -195,7 +196,25 @@ body {
     color: rgb(122, 122, 122);
 }
 
+/* value of the information */
 .resultInfo {
     font-size: 16px;
     font-weight: 400;
+}
+
+/* option to select number of results */
+.options {
+    /* User Profile */
+    position: relative;
+    left: 50%;
+    width: max-content;
+    transform: translate(-50%, 40px);
+
+    /* make it so that children go left to right */
+    display: flex;
+}
+
+/* text that says "number of results" */
+.options p {
+    margin-right: 10px;
 }
