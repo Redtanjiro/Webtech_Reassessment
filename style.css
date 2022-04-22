@@ -160,6 +160,7 @@ body {
     /* padding: 20px 20px; */
 }
 
+/* profile image of person */
 .cardImage {
     /* controling positioning */
     position: relative;
@@ -172,6 +173,7 @@ body {
     border-radius: 50%;
 }
 
+/* container for person information */
 .infoContainer {
     /* set height and display properties*/
     width: 100%;
@@ -182,6 +184,18 @@ body {
 
     /* properties to adjust position of content */
     margin-top: 20px;
-    padding: 20px 20px;
+    padding: 30px 20px;
     background-color: rgb(255, 255, 255);
+}
+
+/* title of information */
+.resultTitle {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(122, 122, 122);
+}
+
+.resultInfo {
+    font-size: 16px;
+    font-weight: 400;
 }
