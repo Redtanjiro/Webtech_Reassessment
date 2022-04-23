@@ -37,6 +37,10 @@ function createVisitorUser(data) {
     var bday = data.results[0].dob.date;
     $("#visitorBday .infoContent").html(bday);
 
+    // country
+    var country = data.results[0].location.country;
+    $("#visitorCountry .infoContent").html(country);
+
     // phone
     var phone = data.results[0].phone;
     $("#visitorPhoneno .infoContent").html(phone);
