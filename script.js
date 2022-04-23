@@ -6,3 +6,8 @@ $.ajax({
         console.log(data);
     }
 });
+
+//a function to create the visitor user when the page is loaded
+function createVisitorUser(data) {
+
+}
