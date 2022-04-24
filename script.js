@@ -188,3 +188,11 @@ function filterByName() {
 }
 //attach function to the button
 $("#filterName").on("click", filterByName);
+
+
+///filter by age in ascending
+function filterByAge() {
+    console.log("ba")
+}
+//attach function to the button
+$("#filterAge").on("click", filterByAge);
