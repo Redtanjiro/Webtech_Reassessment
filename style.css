@@ -258,6 +258,19 @@ body {
     background-color: rgb(23, 109, 213);
 }
 
+/* hide template for cards */
 #template {
     display: none;
+}
+
+/* container for filters */
+.filters {
+    /* Center on page */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 60px);
+    width: max-content;
+
+    /* flow children left to right */
+    display: flex;
 }
