@@ -192,7 +192,23 @@ $("#filterName").on("click", filterByName);
 
 ///filter by age in ascending
 function filterByAge() {
-    console.log("ba")
+    //create shallow copy of apiResults
+    //use sort() method to sort array in ascending order of Nname
+    //if age of a is bigger than age of b, return true;
+    //this will end up sorting array in ascending order of ages
+    let apiResultsCopy = { ...apiResults };
+    apiResultsCopy.results.sort((a, b) => {
+        if (a.dob.age > b.dob.age) {
+            return true;
+        }
+        else {
+            false;
+        }
+    }
+    );
+
+    //update the html with sorted information
+    updateResults(apiResultsCopy);
 }
 //attach function to the button
 $("#filterAge").on("click", filterByAge);
