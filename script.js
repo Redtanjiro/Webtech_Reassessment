@@ -99,12 +99,14 @@ function updateResults(data) {
         //get selectors into variables for easier reading of code
         var template = $("#template .card"); //select card from template tag
         var card = template.clone();    //make a copy of the template
+        var img = card.find(".cardImage")   //select image tag
         var name = card.find("#resultName .resultInfo");    //select name
         var age = card.find("#resultAge .resultInfo");      //select age
         var bday = card.find("#resultBday .resultInfo");    //select dob
         var email = card.find("#resultEmail .resultInfo");   //select email
 
         //change all values to appropriate data
+        var resultImg = data.results[i].picture.large;
         var resultName = data.results[i].name.first + " " + data.results[i].name.last;
         var resultAge = data.results[i].dob.age;
         var resultEmail = data.results[i].email;
@@ -119,6 +121,7 @@ function updateResults(data) {
         resultBday = resultBday.slice(0, j);
 
         //change the html content for all
+        img.attr("src", resultImg);
         name.html(resultName);
         age.html(resultAge);
         bday.html(resultBday);
