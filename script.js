@@ -90,6 +90,9 @@ function updateResults(data) {
     var bday = card.find("#resultBday .resultInfo");    //select dob
     var email = card.find("#resultEmail .resultInfo");   //select email
 
+    for (var i = 0; i < data.results.length; i++) {
+
+    }
 
 
 }
