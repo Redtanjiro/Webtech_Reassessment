@@ -145,7 +145,15 @@ body {
 
 /* container for cards */
 .results {
+    /* formatting text */
     padding: 80px 80px;
+
+    /* properties to make elements go left to right and auto wrap */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 /* card for showing search results */
