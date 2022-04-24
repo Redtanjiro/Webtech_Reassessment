@@ -4,7 +4,6 @@ $.ajax({
     url: 'https://randomuser.me/api/',
     dataType: 'json',
     success: function (data) {
-        console.log(data.results[0])
         createVisitorUser(data);
     }
 });
@@ -52,3 +51,22 @@ function createVisitorUser(data) {
     $("#visitorPhoneno .infoContent").html(phone);
 }
 
+//function for searching for new people
+//this will ask api again to send new list of people
+//
+$("#searchButton").on("click", function () {
+    //get value from select tag to see how many results user wants to see
+    var numberOfResults = $("#numberOfResults").val();
+
+    //the final url to be provided to $.ajax is set here
+    var query = 'https://randomuser.me/api/?results=' + numberOfResults;
+
+    //ask api to send data
+    $.ajax({
+        url: query,
+        dataType: 'json',
+        success: function (data) {
+            console.log(data);
+        }
+    });
+});
