@@ -174,9 +174,14 @@ function showOnlyFemale() {
 $("#filterFemale").on("click", showOnlyFemale);
 
 
-///filter by name
+///filter by name in ascending
 function filterByName() {
-
+    //create shallow copy of object
+    //use sort() method to sort array in ascending order of name
+    //localeCompare() is used to compare two strings, and return wether one comes before, or after, or equal
+    //this way all data will be sorted in ascending order of names
+    let apiResultsCopy = { ...apiResults };
+    apiResultsCopy.results.sort((a, b) => a.name.localeCompare(b.name))
 }
 //attach function to the button
 $("#filterName").on("click", filterByName);
