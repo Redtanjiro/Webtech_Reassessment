@@ -100,6 +100,9 @@ function updateResults(data) {
         var resultName = data.results[i].name.first + " " + data.results[i].name.last;
         var resultAge = data.results[i].dob.age;
         var resultEmail = data.results[i].email;
+        var resultBday = data.results[i].dob.date;
+        var i = bday.indexOf("T");
+        resultBday = bday.slice(0, i);
     }
 
 
