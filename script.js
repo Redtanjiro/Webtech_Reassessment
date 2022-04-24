@@ -17,6 +17,10 @@ $.ajax({
 //use jquery selector $("#visitorName").html() and change html
 //do same for all other information
 function createVisitorUser(data) {
+    // update Image
+    var profilePicture = data.results[0].picture.large;
+    $("#visitorPicture").attr("src", profilePicture);
+
     // update Name
     var firstName = data.results[0].name.first;
     var lastName = data.results[0].name.last;
