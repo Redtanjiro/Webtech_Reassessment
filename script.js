@@ -139,6 +139,13 @@ function updateResults(data) {
 
 //FILTER RESULTS
 
+///show without any filters
+function showAll() {
+    updateResults(apiResults);
+}
+$("#filterAll").on("click", showAll);
+
+
 ///Filter only Male
 function showOnlyMale() {
     //use ... syntax to make shallow copy, so original is not affected
@@ -152,6 +159,7 @@ function showOnlyMale() {
 //attach function to appropraite button
 $("#filterMale").on("click", showOnlyMale);
 
+
 ///Filter only Female
 function showOnlyFemale() {
     //use ... syntax to make shallow copy, so original is not affected
@@ -164,3 +172,11 @@ function showOnlyFemale() {
 }
 //attach function to appropraite button
 $("#filterFemale").on("click", showOnlyFemale);
+
+
+///filter by name
+function filterByName() {
+
+}
+//attach function to the button
+$("#filterName").on("click", filterByName);
