@@ -34,7 +34,13 @@ function createVisitorUser(data) {
     $("#visitorAge .infoContent").html(age);
 
     // bday - to make it appear properly
+    //recieved in format of 1971-05-18T05:46:28.364Z
+    //so we need to remove everything after T character
+    //we will find the position using indexOf
+    //then using slice extract that part of string 
     var bday = data.results[0].dob.date;
+    var i = bday.indexOf("T");
+    bday = bday.slice(0, i);
     $("#visitorBday .infoContent").html(bday);
 
     // country
