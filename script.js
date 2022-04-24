@@ -141,7 +141,13 @@ function updateResults(data) {
 
 ///Filter only Male
 function showOnlyMale() {
+    //use ... syntax to make shallow copy, so original is not affected
+    let apiResultsCopy = { ...apiResults };
+    let filteredResults = apiResultsCopy.results.filter(val => val.gender === 'male');
+    apiResultsCopy.results = filteredResults;
 
+    //update the html with filtered data
+    updateResults(apiResultsCopy);
 }
 //attach function to appropraite button
 $("#filterMale").on("click", showOnlyMale);
