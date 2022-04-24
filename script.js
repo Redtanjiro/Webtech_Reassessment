@@ -1,3 +1,5 @@
+// LOAD VISITOR USER
+
 // use jquery ajax object to get data from api
 //upon successful data recieiving, run createVisitorUser() function 
 $.ajax({
@@ -7,7 +9,6 @@ $.ajax({
         createVisitorUser(data);
     }
 });
-
 //a function to create the visitor user when the page is loaded
 //store first name in variable firstName
 //store last name in variable lastName
@@ -51,9 +52,14 @@ function createVisitorUser(data) {
     $("#visitorPhoneno .infoContent").html(phone);
 }
 
-//function for searching for new people
-//this will ask api again to send new list of people
-//
+
+//LOAD RESULTS
+
+///event handler for starting api request
+//attach event handler to #searchButton div
+//read value from dropdown
+//use value to create api query
+//call the api to recieve data and run another function to change html
 $("#searchButton").on("click", function () {
     //get value from select tag to see how many results user wants to see
     var numberOfResults = $("#numberOfResults").val();
@@ -61,12 +67,20 @@ $("#searchButton").on("click", function () {
     //the final url to be provided to $.ajax is set here
     var query = 'https://randomuser.me/api/?results=' + numberOfResults;
 
-    //ask api to send data
+    //ask api to send data, and run function updateResults() on success
     $.ajax({
         url: query,
         dataType: 'json',
         success: function (data) {
-            console.log(data);
+            updateResults(data);
         }
     });
 });
+///Function to update the html
+// read value from numberOfResults
+// create for loop with ^ number of cycles
+// read first information from data object
+//
+function updateResults(data) {
+
+}
