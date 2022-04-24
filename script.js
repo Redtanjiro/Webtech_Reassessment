@@ -82,20 +82,18 @@ $("#searchButton").on("click", function () {
 // read first information from data object
 // 
 function updateResults(data) {
-    //loop to iterate through data
-    console.log(data.results.length);
-    var template = $("template .card"); //select card from template tag
-    var card = template.clone();    //make a copy of the template
-    var name = card.find("#resultName .resultInfo");    //select name
-    var age = card.find("#resultAge .resultInfo");      //select age
-    var bday = card.find("#resultBday .resultInfo");    //select dob
-    var email = card.find("#resultEmail .resultInfo");   //select email
-
-    //loop to iterate through all of the results
+    ///loop to iterate through all of the results
     //i=0 to start at 0th position
     //i<data.results.length so it runs as many times as there are results
     //i++ so value of i increments by 1 each cycle
     for (var i = 0; i < data.results.length; i++) {
+        var template = $("template .card"); //select card from template tag
+        var card = template.clone();    //make a copy of the template
+        var name = card.find("#resultName .resultInfo");    //select name
+        var age = card.find("#resultAge .resultInfo");      //select age
+        var bday = card.find("#resultBday .resultInfo");    //select dob
+        var email = card.find("#resultEmail .resultInfo");   //select email
+
 
     }
 
