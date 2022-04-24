@@ -254,3 +254,7 @@ body {
 .searchButton:active {
     background-color: rgb(23, 109, 213);
 }
+
+#template {
+    display: none;
+}

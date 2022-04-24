@@ -88,9 +88,10 @@ function updateResults(data) {
     //i<data.results.length so it runs as many times as there are results
     //i++ so value of i increments by 1 each cycle
     for (var i = 0; i < data.results.length; i++) {
+        console.log(i);
         //get selectors into variables for easier reading of code
         var results = $(".results");    //results container
-        var template = $("template .card"); //select card from template tag
+        var template = $("#template .card"); //select card from template tag
         var card = template.clone();    //make a copy of the template
         var name = card.find("#resultName .resultInfo");    //select name
         var age = card.find("#resultAge .resultInfo");      //select age
@@ -102,14 +103,14 @@ function updateResults(data) {
         var resultAge = data.results[i].dob.age;
         var resultEmail = data.results[i].email;
 
-        //Store value of bday
-        //get rid of extra information such as timezone and exact time
-        //keep only date
-        //find index of character T
-        //splice string from 0 to T to extract relevant information
+        // //Store value of bday
+        // //get rid of extra information such as timezone and exact time
+        // //keep only date
+        // //find index of character T
+        // //splice string from 0 to T to extract relevant information
         var resultBday = data.results[i].dob.date;
-        var i = resultBday.indexOf("T");
-        resultBday = resultBday.slice(0, i);
+        var j = resultBday.indexOf("T");
+        resultBday = resultBday.slice(0, j);
 
         //change the html content for all
         name.html(resultName);
@@ -117,7 +118,8 @@ function updateResults(data) {
         bday.html(resultBday);
         email.html(resultEmail);
 
-
+        //append the cloned card into the results container
+        results.append(card);
     }
 
 
