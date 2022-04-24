@@ -275,13 +275,26 @@ body {
     display: flex;
 }
 
+/* container for gender */
 #filterGender {
     display: flex;
     column-gap: 10px;
 }
 
+/* buttons */
 #filterGender * {
     padding: 10px;
     border-radius: 10px;
     border: 0.25px solid rgb(158, 158, 158);
+    cursor: pointer;
+}
+
+/* hightlight on hover */
+#filterGender *:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+/* darken on press */
+#filterGender *:active {
+    background-color: grey;
 }
