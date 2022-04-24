@@ -287,7 +287,8 @@ body {
 /* buttons */
 #filterGender *,
 #filterName,
-#filterAge {
+#filterAge,
+#filterAll {
     padding: 10px;
     border-radius: 10px;
     border: 0.25px solid rgb(158, 158, 158);
@@ -298,13 +299,15 @@ body {
 /* hightlight on hover */
 #filterGender *:hover,
 #filterName:hover,
-#filterAge:hover {
+#filterAge:hover,
+#filterAll:hover {
     background-color: rgb(218, 218, 218);
 }
 
 /* darken on press */
 #filterGender *:active,
 #filterName:active,
-#filterAge:active {
+#filterAge:active,
+#filterAll:active {
     background-color: grey;
 }
