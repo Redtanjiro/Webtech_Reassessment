@@ -89,6 +89,7 @@ function updateResults(data) {
     //i++ so value of i increments by 1 each cycle
     for (var i = 0; i < data.results.length; i++) {
         //get selectors into variables for easier reading of code
+        var results = $(".results");    //results container
         var template = $("template .card"); //select card from template tag
         var card = template.clone();    //make a copy of the template
         var name = card.find("#resultName .resultInfo");    //select name
@@ -109,6 +110,12 @@ function updateResults(data) {
         var resultBday = data.results[i].dob.date;
         var i = resultBday.indexOf("T");
         resultBday = resultBday.slice(0, i);
+
+        //change the html content for all
+        name.html(resultName);
+        age.html(resultAge);
+        bday.html(resultBday);
+        email.html(resultEmail);
 
 
     }
