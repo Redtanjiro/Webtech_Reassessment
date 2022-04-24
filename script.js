@@ -83,14 +83,16 @@ $("#searchButton").on("click", function () {
 // read first information from data object
 // 
 function updateResults(data) {
+    //clear the results container before refilling it
+    var results = $(".results");    //results container
+    results.html("");   //set html to a blank string
+
     ///loop to iterate through all of the results
     //i=0 to start at 0th position
     //i<data.results.length so it runs as many times as there are results
     //i++ so value of i increments by 1 each cycle
     for (var i = 0; i < data.results.length; i++) {
-        console.log(i);
         //get selectors into variables for easier reading of code
-        var results = $(".results");    //results container
         var template = $("#template .card"); //select card from template tag
         var card = template.clone();    //make a copy of the template
         var name = card.find("#resultName .resultInfo");    //select name
@@ -121,6 +123,4 @@ function updateResults(data) {
         //append the cloned card into the results container
         results.append(card);
     }
-
-
 }
