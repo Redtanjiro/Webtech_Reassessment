@@ -168,6 +168,7 @@ body {
     /* remaining styling */
     background-color: rgb(238, 238, 238);
     outline: 2px solid rgb(202, 202, 202);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.119);
     /* padding: 20px 20px; */
 }
 
