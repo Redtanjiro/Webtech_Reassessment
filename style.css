@@ -274,3 +274,14 @@ body {
     /* flow children left to right */
     display: flex;
 }
+
+#filterGender {
+    display: flex;
+    column-gap: 10px;
+}
+
+#filterGender * {
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.25px solid rgb(158, 158, 158);
+}
