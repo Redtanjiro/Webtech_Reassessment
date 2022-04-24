@@ -273,6 +273,8 @@ body {
 
     /* flow children left to right */
     display: flex;
+    column-gap: 10px;
+    align-items: center;
 }
 
 /* container for gender */
@@ -282,7 +284,9 @@ body {
 }
 
 /* buttons */
-#filterGender * {
+#filterGender *,
+#filterName,
+#filterAge {
     padding: 10px;
     border-radius: 10px;
     border: 0.25px solid rgb(158, 158, 158);
@@ -290,11 +294,15 @@ body {
 }
 
 /* hightlight on hover */
-#filterGender *:hover {
+#filterGender *:hover,
+#filterName:hover,
+#filterAge:hover {
     background-color: rgb(218, 218, 218);
 }
 
 /* darken on press */
-#filterGender *:active {
+#filterGender *:active,
+#filterName:active,
+#filterAge:active {
     background-color: grey;
 }
