@@ -6,6 +6,7 @@ $.ajax({
     url: 'https://randomuser.me/api/',
     dataType: 'json',
     success: function (data) {
+        console.log(data);//remoce this
         createVisitorUser(data);
     }
 });
@@ -87,6 +88,7 @@ function updateResults(data) {
     //i<data.results.length so it runs as many times as there are results
     //i++ so value of i increments by 1 each cycle
     for (var i = 0; i < data.results.length; i++) {
+        //get selectors into variables for easier reading of code
         var template = $("template .card"); //select card from template tag
         var card = template.clone();    //make a copy of the template
         var name = card.find("#resultName .resultInfo");    //select name
@@ -94,6 +96,8 @@ function updateResults(data) {
         var bday = card.find("#resultBday .resultInfo");    //select dob
         var email = card.find("#resultEmail .resultInfo");   //select email
 
+        //change all values to appropriate data
+        var resultName = data.results[i].name.first + " " + data.results[i].name.last;
 
     }
 
