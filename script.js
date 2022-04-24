@@ -151,3 +151,16 @@ function showOnlyMale() {
 }
 //attach function to appropraite button
 $("#filterMale").on("click", showOnlyMale);
+
+///Filter only Female
+function showOnlyFemale() {
+    //use ... syntax to make shallow copy, so original is not affected
+    let apiResultsCopy = { ...apiResults };
+    let filteredResults = apiResultsCopy.results.filter(val => val.gender === 'female');
+    apiResultsCopy.results = filteredResults;
+
+    //update the html with filtered data
+    updateResults(apiResultsCopy);
+}
+//attach function to appropraite button
+$("#filterFemale").on("click", showOnlyFemale);
