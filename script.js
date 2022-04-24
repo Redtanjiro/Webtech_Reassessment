@@ -60,6 +60,9 @@ function createVisitorUser(data) {
 
 //LOAD RESULTS
 
+//variable to save the data to
+var apiResults = {};
+
 ///event handler for starting api request
 //attach event handler to #searchButton div
 //read value from dropdown
@@ -77,6 +80,7 @@ $("#searchButton").on("click", function () {
         url: query,
         dataType: 'json',
         success: function (data) {
+            apiResults = data;
             updateResults(data);
         }
     });
@@ -131,3 +135,13 @@ function updateResults(data) {
         results.append(card);
     }
 }
+
+
+//FILTER RESULTS
+
+///Filter only Male
+function showOnlyMale() {
+
+}
+//attach function to appropraite button
+$("#filterMale").on("click", showOnlyMale);
