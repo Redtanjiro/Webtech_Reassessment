@@ -82,38 +82,42 @@
 
             <!-- where all cards will be shown -->
             <div class="results">
-                <div class="card">
-                    <!-- image of user -->
-                    <img src="pictures/pp.png" alt="" class="cardImage">
 
-                    <!-- container for information -->
-                    <div class="infoContainer">
-                        <!-- name of person -->
-                        <div class="resultName">
-                            <p class="resultTitle">Name</p>
-                            <p class="resultInfo">Ibina Iratai</p>
-                        </div>
-                        <!-- age of person -->
-                        <div class="resultAge">
-                            <p class="resultTitle">Age</p>
-                            <p class="resultInfo">01</p>
-                        </div>
-                        <!-- bday of person -->
-                        <div class="resultBday">
-                            <p class="resultTitle">Bday</p>
-                            <p class="resultInfo">01/01/0001</p>
-                        </div>
-                        <!-- email of person -->
-                        <div class="resultEmail">
-                            <p class="resultTitle">Email</p>
-                            <p class="resultInfo">IbinaIratai@gmail.com</p>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
     </div>
+
+    <!-- card template -->
+    <template>
+        <div class="card">
+            <!-- image of user -->
+            <img src="pictures/pp.png" alt="" class="cardImage">
+
+            <!-- container for information -->
+            <div class="infoContainer">
+                <!-- name of person -->
+                <div id="resultName">
+                    <p class="resultTitle">Name</p>
+                    <p class="resultInfo">Ibina Iratai</p>
+                </div>
+                <!-- age of person -->
+                <div id="resultAge">
+                    <p class="resultTitle">Age</p>
+                    <p class="resultInfo">01</p>
+                </div>
+                <!-- bday of person -->
+                <div id="resultBday">
+                    <p class="resultTitle">Bday</p>
+                    <p class="resultInfo">01/01/0001</p>
+                </div>
+                <!-- email of person -->
+                <div id="resultEmail">
+                    <p class="resultTitle">Email</p>
+                    <p class="resultInfo">IbinaIratai@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </template>
 
     <!-- import jequery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

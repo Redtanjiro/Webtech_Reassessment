@@ -80,7 +80,7 @@ $("#searchButton").on("click", function () {
 // read value from numberOfResults
 // create for loop with ^ number of cycles
 // read first information from data object
-//
+// 
 function updateResults(data) {
 
 }
