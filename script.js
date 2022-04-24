@@ -98,7 +98,8 @@ function updateResults(data) {
 
         //change all values to appropriate data
         var resultName = data.results[i].name.first + " " + data.results[i].name.last;
-
+        var resultAge = data.results[i].dob.age;
+        var resultEmail = data.results[i].email;
     }
 
 
