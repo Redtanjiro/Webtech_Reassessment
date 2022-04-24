@@ -100,9 +100,17 @@ function updateResults(data) {
         var resultName = data.results[i].name.first + " " + data.results[i].name.last;
         var resultAge = data.results[i].dob.age;
         var resultEmail = data.results[i].email;
+
+        //Store value of bday
+        //get rid of extra information such as timezone and exact time
+        //keep only date
+        //find index of character T
+        //splice string from 0 to T to extract relevant information
         var resultBday = data.results[i].dob.date;
-        var i = bday.indexOf("T");
-        resultBday = bday.slice(0, i);
+        var i = resultBday.indexOf("T");
+        resultBday = resultBday.slice(0, i);
+
+
     }
 
 
