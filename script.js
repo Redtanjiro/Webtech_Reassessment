@@ -51,3 +51,4 @@ function createVisitorUser(data) {
     var phone = data.results[0].phone;
     $("#visitorPhoneno .infoContent").html(phone);
 }
+
