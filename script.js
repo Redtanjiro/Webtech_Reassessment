@@ -181,7 +181,10 @@ function filterByName() {
     //localeCompare() is used to compare two strings, and return wether one comes before, or after, or equal
     //this way all data will be sorted in ascending order of names
     let apiResultsCopy = { ...apiResults };
-    apiResultsCopy.results.sort((a, b) => a.name.localeCompare(b.name))
+    apiResultsCopy.results.sort((a, b) => a.name.first.localeCompare(b.name.first))
+
+    //update the html with filtered information
+    updateResults(apiResultsCopy);
 }
 //attach function to the button
 $("#filterName").on("click", filterByName);
