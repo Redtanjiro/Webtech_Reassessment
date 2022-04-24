@@ -77,10 +77,19 @@ $("#searchButton").on("click", function () {
     });
 });
 ///Function to update the html
-// read value from numberOfResults
+// read length of data array
 // create for loop with ^ number of cycles
 // read first information from data object
 // 
 function updateResults(data) {
+    //loop to iterate through data
+    console.log(data.results.length);
+    var card = $(".results .card"); //select card
+    var name = card.find("#resultName .resultInfo");    //select name
+    var age = card.find("#resultAge .resultInfo");      //select age
+    var bday = card.find("#resultBday .resultInfo");    //select dob
+    var email = card.find("#resultEmail .resultInfo");   //select email
+
+
 
 }
